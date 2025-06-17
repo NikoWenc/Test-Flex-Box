@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(83, 83, 83);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+}
+
+.box-1 {
+  background-image: url(pic1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box-2 {
+  background-image: url(pic2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box-3{
+  background-image: url(pic3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box-1 {
+  position: relative;
+}
+
+.box-1, .box-2, .box-3 {
+  width: 300px;
+  height: 200px;
+}
+
+.box {
+  background-color: aqua;
+  width: 300px;
+  height: 200px;
+  transition: margin-top 2s ease;
+}
+
+.box-1:hover .box, 
+.box-2:hover .box,
+.box-3:hover .box {
+  margin-top: 210px;
+}
+
+@media (max-width: 1140px){
+  .flex-container {
+    flex-direction: column;
+    gap: 200px;
+  }
+}
